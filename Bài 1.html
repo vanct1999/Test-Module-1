@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 1</title>
+</head>
+<body>
+<script>
+    var diem = [6, 8, 2, 5, 8, 4, 8, 2, 7, 9, 0, 3, 1];
+
+    function findMax(array) {
+        let max = array[0];
+        for (let i = 0; i < array.length; i++) {
+            if (max < array[i]) {
+                max=array[i];
+            }
+        }
+        document.write("Điểm cao nhất là: " + max)
+    }
+    findMax(diem);
+</script>
+</body>
+</html>

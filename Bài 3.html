@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<body>
+<script>
+
+    function isFibonacci(){
+        let num=prompt("Nhập số cần kiểm tra:")
+        let check = false;
+        let a = 0;
+        let b = 1;
+        if (num == a){
+            check = true;
+        }
+        while (b <= num){
+            if (b == num ){
+                check = true;
+                break;
+            } else {
+                let temp = a+b;
+                a = b;
+                b = temp;
+            }
+        }
+        return check;
+    }
+    let nhap=isFibonacci();
+    alert(nhap)
+
+</script>
+</body>
+</html>
